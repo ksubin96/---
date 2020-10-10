@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Game extends Person {
 	Random random = new Random();
-	public int random1,random2,random3;
 	
 	public void create_random() {
 		this.random1 = random.nextInt(2)+1;
@@ -15,11 +14,11 @@ public class Game extends Person {
 	
 	public boolean check_win() {
 		if((this.random1 == this.random2)&&(this.random1 == this.random3)) {
-			System.out.println(this.name+"´ÔÀÌ ÀÌ°å½À´Ï´Ù!");
+			System.out.println(this.name+"ë‹˜ì´ ì´ê²¼ìŠµë‹ˆë‹¤!");
 			return true;
 		}
 		else {
-			System.out.println("¾Æ½±±º¿ä!");
+			System.out.println("ì•„ì‰½êµ°ìš”!");
 			return false;
 		}
 	}
@@ -33,11 +32,11 @@ public class Game extends Person {
 		Person player1 = new Game();
 		Person player2 = new Game();
 		
-		System.out.print("1¹øÂ° ¼±¼ö ÀÌ¸§>>");
+		System.out.print("1ë²ˆì§¸ ì„ ìˆ˜ ì´ë¦„>>");
 		String name = scanner.nextLine();
 		player1.name = name;
 		
-		System.out.print("2¹øÂ° ¼±¼ö ÀÌ¸§>>");
+		System.out.print("2ë²ˆì§¸ ì„ ìˆ˜ ì´ë¦„>>");
 		name = scanner.nextLine();
 		player2.name = name;
 		
